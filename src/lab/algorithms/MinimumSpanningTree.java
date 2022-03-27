@@ -101,7 +101,7 @@ public class MinimumSpanningTree {
         List<Edge> sortedEdges = new ArrayList<>(graph.getEdges());
         java.util.Collections.sort(sortedEdges, (e1, e2) -> Integer.compare(e1.getCost(), e2.getCost()));
 
-        // greedly takes the minimum cost edge
+        // greedy takes the minimum cost edge
         for (Edge edge : sortedEdges){
             onVisitedEdge.accept(edge);
             if (sets.nodesAreInDifferentSets(edge.getSource(), edge.getDestination())) {
