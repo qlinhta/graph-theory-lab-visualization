@@ -11,16 +11,16 @@ import java.awt.*;
  */
 public class ShortestPathTab extends GenericTab {
 
-    public ShortestPathTab(Main main) {
+	public ShortestPathTab(Main main) {
 
-        super(main);
-        controlPanel = new ShortestPathControlPanel(main, this);
-        graphsContainerPanel = new ShortestPathGraphsContainerPanel(this, controlPanel);
+		super(main);
+		controlPanel = new ShortestPathControlPanel(main, this);
+		graphsContainerPanel = new ShortestPathGraphsContainerPanel(this, controlPanel);
 
-        divider = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, graphsContainerPanel, controlPanel);
-        divider.setDividerLocation(450);
-        add(divider, BorderLayout.CENTER);
+		divider = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, graphsContainerPanel, controlPanel);
+		divider.setDividerLocation(450);
+		add(divider, BorderLayout.CENTER);
 
-        addComponentListener(this);
-    }
+		addComponentListener(this);
+	}
 }

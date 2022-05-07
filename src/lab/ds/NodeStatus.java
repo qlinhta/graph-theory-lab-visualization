@@ -3,11 +3,11 @@ package lab.ds;
 import java.awt.*;
 
 public enum NodeStatus {
-    UNKNOWN(Color.RED), DISCOVERED(Color.GRAY), PROCESSED(new Color(245, 245, 245));
+	UNKNOWN(Color.RED), DISCOVERED(Color.GRAY), PROCESSED(new Color(245, 245, 245));
 
-    public Color color;
+	public Color color;
 
-    NodeStatus(Color color) {
-        this.color = color;
-    }
+	NodeStatus(Color color) {
+		this.color = color;
+	}
 }
