@@ -3,7 +3,7 @@ package lab.ds;
 import java.awt.*;
 
 public enum NodeStatus {
-	UNKNOWN(Color.RED), DISCOVERED(Color.GRAY), PROCESSED(new Color(245, 245, 245));
+	UNKNOWN(Color.BLACK), DISCOVERED(new Color(0,128,128)), PROCESSED(new Color(144,238,144));
 
 	public Color color;
 

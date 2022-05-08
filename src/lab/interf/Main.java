@@ -25,9 +25,9 @@ public class Main extends JFrame {
 
 	public Main() {
 
-		super("GraphLab");
+		super("Quyen Linh TA");
 
-		setSize(1000, 510);
+		setSize(1000, 800);
 		setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		try {
 			UIManager.setLookAndFeel("com.sun.java.swing.plaf.gtk.GTKLookAndFeel");

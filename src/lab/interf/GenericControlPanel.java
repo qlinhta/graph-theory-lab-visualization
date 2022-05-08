@@ -90,7 +90,7 @@ public abstract class GenericControlPanel extends JPanel implements ChangeListen
 			repaint();
 		});
 
-		newGraphButton = new JButton("New Graph");
+		newGraphButton = new JButton("Generate new graph");
 		newGraphButton.addActionListener(e -> {
 			genericTab.getGraphsContainer().newGraph();
 			main.setProgressBar(0);

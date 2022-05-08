@@ -22,7 +22,7 @@ import static lab.utils.Constants.Y_SHIFT;
 public abstract class GenericGraphPanel extends JPanel implements ActionListener, MouseMotionListener, MouseListener {
 
 	private static final long serialVersionUID = 1L;
-	private static final Font ALGORITHM_NAME_FONT = new Font("Consolas", Font.BOLD, 12);
+	private static final Font ALGORITHM_NAME_FONT = new Font("Consolas", Font.BOLD, 14);
 	private static final Font[] KEY_FONT = new Font[30];
 	private static final Color[] GRAYS = new Color[256];
 	private static final Color[] COLOR_GRADIENT = new Color[256];
@@ -30,8 +30,8 @@ public abstract class GenericGraphPanel extends JPanel implements ActionListener
 	private static final Color KEY_COLOR = new Color(190, 190, 190);
 	private static final Border WORKING_BORDER = BorderFactory.createEtchedBorder();
 	private static final Border FINISHED_BORDER = BorderFactory.createEtchedBorder(Color.BLUE, Color.LIGHT_GRAY);
-	private static final Color WORKING_BACKGROUND_COLOR = new Color(255, 229, 204);
-	private static final Color FINISHED_BACKGROUND_COLOR = new Color(204, 255, 204);
+	private static final Color WORKING_BACKGROUND_COLOR = new Color(119,136,153);
+	private static final Color FINISHED_BACKGROUND_COLOR = new Color(176,196,222);
 
 	static {
 		for (int j = 0; j < KEY_FONT.length; j++) {
