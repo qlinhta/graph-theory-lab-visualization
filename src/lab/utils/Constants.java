@@ -9,7 +9,7 @@ public class Constants {
 	public static final int MAX_SPEED = 250;
 	public static final int MAX_EDGES = 40;
 
-	public static final String IN_PROGRESS_MESSAGE = " in progress..";
+	public static final String IN_PROGRESS_MESSAGE = " is running...!";
 	public static final String SET_STARTING_NODE_LABEL = "Set as starting node";
 	public static final String SET_TARGET_NODE_LABEL = "Set as target node";
 }

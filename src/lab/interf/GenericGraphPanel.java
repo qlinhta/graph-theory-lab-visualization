@@ -22,7 +22,7 @@ import static lab.utils.Constants.Y_SHIFT;
 public abstract class GenericGraphPanel extends JPanel implements ActionListener, MouseMotionListener, MouseListener {
 
 	private static final long serialVersionUID = 1L;
-	private static final Font ALGORITHM_NAME_FONT = new Font("Arial", Font.BOLD, 12);
+	private static final Font ALGORITHM_NAME_FONT = new Font("Consolas", Font.BOLD, 12);
 	private static final Font[] KEY_FONT = new Font[30];
 	private static final Color[] GRAYS = new Color[256];
 	private static final Color[] COLOR_GRADIENT = new Color[256];
@@ -30,12 +30,12 @@ public abstract class GenericGraphPanel extends JPanel implements ActionListener
 	private static final Color KEY_COLOR = new Color(190, 190, 190);
 	private static final Border WORKING_BORDER = BorderFactory.createEtchedBorder();
 	private static final Border FINISHED_BORDER = BorderFactory.createEtchedBorder(Color.BLUE, Color.LIGHT_GRAY);
-	private static final Color WORKING_BACKGROUND_COLOR = new Color(190, 190, 190);
-	private static final Color FINISHED_BACKGROUND_COLOR = new Color(210, 210, 210);
+	private static final Color WORKING_BACKGROUND_COLOR = new Color(255, 229, 204);
+	private static final Color FINISHED_BACKGROUND_COLOR = new Color(204, 255, 204);
 
 	static {
 		for (int j = 0; j < KEY_FONT.length; j++) {
-			KEY_FONT[j] = new Font("Arial", Font.BOLD, 4 + j);
+			KEY_FONT[j] = new Font("Consolas", Font.BOLD, 4 + j);
 		}
 		for (int j = 0; j < 255; j++) {
 			GRAYS[j] = new Color(j, j, j);
@@ -53,7 +53,7 @@ public abstract class GenericGraphPanel extends JPanel implements ActionListener
 	protected boolean drawThinEdges = true;
 	protected boolean drawWorkingEdges = true;
 	protected boolean drawShortestPath = false;
-	protected boolean drawTree = false;
+	protected boolean drawTree = true;
 	protected boolean drawEdgesWithColorGradient = true;
 	protected boolean drawEdgesWithGrayShade = false;
 	protected int workingEdgesWidth = 4;
