@@ -197,7 +197,6 @@ public abstract class GenericGraphPanel extends JPanel implements ActionListener
 				drawColoredEdge(g2, edge, mf, color);
 			}
 
-			// FIXME: when the shortest path procedure ends, the edge shouldn't be colored
 			if (drawEdgesWithGrayShade && edges.size() > 0) {
 				drawColoredEdge(g2, edge, mf, Color.BLACK);
 			}

@@ -33,7 +33,7 @@ public class CcGraphPanel extends GenericGraphPanel {
 		this.hasSearchedNode = false;
 
 		setBorder(BorderFactory.createEtchedBorder());
-		setBackground(new Color(200, 200, 200));
+		setBackground(new Color(176,196,222));
 
 		MouseListener popupListener = new PopupListener();
 		this.addMouseListener(popupListener);
